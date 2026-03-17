@@ -141,6 +141,23 @@ height="220">
 <a href="#">Instagram</a>
 <a href="#">Contact</a>
 </div>
+<audio id="bgMusic" loop>
+  <source src="https://drive.google.com/file/d/1BoVWj4izMPyraZH3ETQmgjuAQhZ_CXD7/view?usp=drivesdk" type="audio/mpeg">
+</audio>
 
+<script>
+let musicStarted = false;
+
+function startMusic() {
+  if (!musicStarted) {
+    document.getElementById("bgMusic").play();
+    musicStarted = true;
+  }
+}
+
+// First touch or click par auto play
+document.addEventListener("click", startMusic);
+document.addEventListener("touchstart", startMusic);
+</script>
 </body>
 </html>

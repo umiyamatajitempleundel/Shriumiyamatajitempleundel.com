@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register - Umiya Temple</title>
+  <style>
+    body { font-family: Arial; text-align: center; background:#fff5e6; }
+    input { padding:10px; margin:10px; width:200px; }
+    button { padding:10px 20px; background:#b30000; color:white; border:none; }
+  </style>
+</head>
+
+<body>
+
+<h2>🙏 Register</h2>
+
+<input type="text" id="regUser" placeholder="Username"><br>
+<input type="password" id="regPass" placeholder="Password"><br>
+
+<button onclick="register()">Register</button>
+
+<p>Already have account? <a href="login.html">Login</a></p>
+
+<script>
+function register() {
+  let user = document.getElementById("regUser").value;
+  let pass = document.getElementById("regPass").value;
+
+  localStorage.setItem("username", user);
+  localStorage.setItem("password", pass);
+
+  alert("Registered Successfully ✅");
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

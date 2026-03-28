@@ -1,163 +1,116 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shri Umiya Mataji Temple Undel</title>
+<title>Shri Umiya Mataji Temple - Undel</title>
 
 <style>
-body {margin:0;font-family:sans-serif;background:#f4f4f4;}
-.header {background:linear-gradient(90deg,#ff7b00,#ffb347);color:#fff;text-align:center;padding:18px;}
-.hero {
-    position: relative;
-    height: 260px;
-    display: flex;
-    align-items: end;
-    color: white;
-    padding: 15px;
-    font-size: 20px;
-    overflow: hidden;
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #fff8f0;
 }
 
-/* Background Image Layer */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: url('https://share.google/MXGRFYnuBXxlSbc5V') center/cover no-repeat;
-
-    /* 🔥 Animation */
-    animation: zoomEffect 10s infinite alternate;
-
-    z-index: 0;
-}
-    .hero {
-    text-shadow: 0 0 10px rgba(255,255,255,0.8);
-    }
-
-/* Dark Overlay */
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0,0,0,0.4);
-    z-index: 1;
+/* Header */
+header {
+  background: #b30000;
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
 
-/* Text above */
-.hero {
-    position: relative;
-    z-index: 2;
+/* Logo */
+.logo {
+  width: 120px;
 }
 
-/* Zoom Animation */
-@keyframes zoomEffect {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
+/* Section */
+.section {
+  padding: 20px;
+  text-align: center;
 }
-background:url('https://share.google/MXGRFYnuBXxlSbc5V') center/cover no-repeat;
-height:260px;display:flex;align-items:end;color:#fff;padding:15px;font-size:20px;
+
+/* Gallery */
+.gallery img {
+  width: 90%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 10px;
 }
-.card {
-background:#fff;margin:15px;padding:15px;border-radius:15px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-}
-.gallery {display:flex;overflow-x:auto;}
-.gallery img {width:160px;margin-right:10px;border-radius:12px;}
-iframe {width:100%;border-radius:12px;}
+
+/* Button */
 .btn {
-background:#ff7b00;color:#fff;padding:10px;border-radius:10px;
-text-align:center;display:block;text-decoration:none;margin-top:10px;
+  background: #b30000;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
-.navbar {
-position:fixed;bottom:0;width:100%;background:#fff;
-display:flex;justify-content:space-around;padding:10px;
-box-shadow:0 -2px 10px rgba(0,0,0,0.1);
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
-.navbar a {color:#ff7b00;text-decoration:none;font-weight:bold;}
 </style>
+
 </head>
 
 <body>
 
-<div class="header">
-🛕 શ્રી ઉમિયા માતાજી મંદિર ઉંદેલ
+<header>
+  <h1>🙏 Shri Umiya Mataji Temple</h1>
+  <p>Undel</p>
+</header>
+
+<!-- Logo -->
+<div class="section">
+  <img src="logo.png" class="logo">
 </div>
 
-<div class="hero">
-🙏 જય ઉમિયા માતાજી
+<!-- About -->
+<div class="section">
+  <h2>જય મા ઉમિયા</h2>
+  <p>Welcome to Shri Umiya Mataji Temple - Undel</p>
+  <p>Place of faith, devotion and peace.</p>
 </div>
 
-<div class="card">
-<h3>📖 મંદિર વિશે</h3>
-<p>શ્રી ઉમિયા માતાજી મંદિર ઉંદેલ કડવા પાટીદાર સમાજનું પવિત્ર ધામ છે.</p>
+<!-- Darshan -->
+<div class="section">
+  <h3>Darshan Timing</h3>
+  <p>Morning: 5:30 AM – 12:00 PM</p>
+  <p>Evening: 4:00 PM – 9:00 PM</p>
 </div>
 
-<div class="card">
-<h3>⏰ આરતી સમય</h3>
-<p>સવાર: 6:00 AM</p>
-<p>સાંજ: 6:30 PM</p>
+<!-- Gallery -->
+<div class="section gallery">
+  <h3>Temple Gallery</h3>
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+  <img src="photo3.jpg">
 </div>
 
-<div class="card">
-<h3>📸 Instagram દર્શન</h3>
-<a href="https://www.instagram.com/umiyamatajitempleundel" class="btn">
-Follow on Instagram
-</a>
-<iframe src="https://www.instagram.com/umiyamatajitempleundel/embed" height="400"></iframe>
-</div>
-  
-  <div class="card">
-<h3>🎥 YouTube Darshan</h3>
-
-<iframe 
-src="https://www.youtube.com/embed/videoseries?list=UU" 
-height="220">
-</iframe>
-
-<a href="https://youtube.com/@shree_umiya_mataji_templeundel" target="_blank" class="btn">
-🔴 Watch More on YouTube
-</a>
-
-  </div>
-
-<div class="card">
-<h3>📞 સંપર્ક</h3>
-<p>📍 ઉંદેલ, ગુજરાત</p>
-<p>📱 Contact at Mandir</p>
-<p>📸 @umiyamatajitempleundel</p>
+<!-- YouTube Video -->
+<div class="section">
+  <h3>Temple Video</h3>
+  <iframe width="90%" height="200"
+  src="https://www.youtube.com/embed/YOUR_VIDEO_LINK"
+  frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="navbar">
-<a href="#">Home</a>
-<a href="#">Instagram</a>
-<a href="#">Contact</a>
+<!-- Social -->
+<div class="section">
+  <h3>Follow Us</h3>
+  <a class="btn" href="https://instagram.com">Instagram</a>
+  <a class="btn" href="https://youtube.com">YouTube</a>
 </div>
-<audio id="bgMusic" loop>
-  <source src="https://drive.google.com/file/d/1BoVWj4izMPyraZH3ETQmgjuAQhZ_CXD7/view?usp=drivesdk" type="audio/mpeg">
-</audio>
 
-<script>
-let musicStarted = false;
+<footer>
+  <p>📍 Undel, Anand, Gujarat</p>
+</footer>
 
-function startMusic() {
-  if (!musicStarted) {
-    document.getElementById("bgMusic").play();
-    musicStarted = true;
-  }
-}
-
-// First touch or click par auto play
-document.addEventListener("click", startMusic);
-document.addEventListener("touchstart", startMusic);
-</script>
 </body>
 </html>
